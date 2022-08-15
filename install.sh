@@ -18,5 +18,5 @@ mv ./dotfiles-fedora/.fonts/* ~/.fonts
 fc-cache -vf
 
 # Removing zip Files
-rm FiraCode.zip Meslo.zip material-design-icons-4.0.0.zip JetBrainsMono.zip v4.29.0.zip
+rm FiraCode.zip Meslo.zip 4.0.0.zip JetBrainsMono.zip v4.29.0.zip
 

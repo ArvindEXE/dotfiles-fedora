@@ -21,7 +21,7 @@ alsa-utils xorg-x11-xinit brightnessctl acpi playerctl python3-pytz glava wmctrl
 NetworkManager network-manager-applet starship lsof gamemode zsh
 
 # Installing Essential Programs 
-dnf install -y lightdm bspwm sxhkd kitty rofi polybar thunar feh lxpolkit micro
+dnf install -y lightdm bspwm sxhkd kitty rofi polybar thunar feh lxpolkit micro geany
 
 # Adding flathub repo
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
