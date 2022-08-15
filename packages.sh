@@ -63,7 +63,7 @@ mv themes/Tokyonight-Dark-BL /usr/share/themes/
 fc-cache -vf
 
 ## Enabling Services and Graphical User Interface
-systemctl enable lightdm
+systemctl enable sddm
 systemctl set-default graphical.target
 
 
