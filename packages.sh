@@ -23,7 +23,7 @@ dbus-devel gcc git libconfig-devel libdrm-devel libev-devel libX11-devel libX11-
 meson pcre-devel pixman-devel uthash-devel xcb-util-image-devel xcb-util-renderutil-devel xorg-x11-proto-devel
 
 # Installing Essential Programs 
-dnf install -y lightdm bspwm sxhkd kitty rofi polybar thunar feh lxpolkit micro geany btop
+dnf install -y sddm bspwm sxhkd kitty rofi polybar thunar feh lxpolkit micro geany btop
 
 # Adding flathub repo
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo

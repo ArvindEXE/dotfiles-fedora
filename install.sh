@@ -12,7 +12,10 @@ mkdir ~/.local
 mv ~/dotfiles-fedora/.local/* ~/.local
 # Fonts
 mkdir ~/.fonts
-mv ./dotfiles-fedora/.fonts/* ~/.fonts
+mv ~/dotfiles-fedora/.fonts/* ~/.fonts
+
+mv ~/dotfiles-fedora/.Xtyonight ~/
+mv ~/dotfiles-fedora/.Xresources ~/
 
 # Reloading Font
 fc-cache -vf
