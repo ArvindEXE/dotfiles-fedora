@@ -20,3 +20,4 @@ fc-cache -vf
 # Removing zip Files
 rm FiraCode.zip Meslo.zip 4.0.0.zip JetBrainsMono.zip v4.29.0.zip
 
+xdg-user-dirs-update

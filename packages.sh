@@ -18,7 +18,9 @@ dnf install -y unzip wget git curl flatpak blueberry bluez bluez-libs bluez-tool
 papirus-icon-theme file-roller gtk-murrine-engine gtk2-engines ImageMagick xclip lxappearance xfce4-settings \
 parcellite neofetch maim gpick jq tint2 moreutils recode dunst plank redshift mate-polkit mpv yaru-sound-theme \
 alsa-utils xorg-x11-xinit brightnessctl acpi playerctl python3-pytz glava wmctrl jgmenu rsms-inter-fonts \
-NetworkManager network-manager-applet starship lsof gamemode zsh
+NetworkManager network-manager-applet starship lsof gamemode zsh \
+dbus-devel gcc git libconfig-devel libdrm-devel libev-devel libX11-devel libX11-xcb libXext-devel libxcb-devel mesa-libGL-devel \
+meson pcre-devel pixman-devel uthash-devel xcb-util-image-devel xcb-util-renderutil-devel xorg-x11-proto-devel
 
 # Installing Essential Programs 
 dnf install -y lightdm bspwm sxhkd kitty rofi polybar thunar feh lxpolkit micro geany
@@ -64,4 +66,4 @@ fc-cache -vf
 systemctl enable lightdm
 systemctl set-default graphical.target
 
-xdg-user-dirs-update
+
