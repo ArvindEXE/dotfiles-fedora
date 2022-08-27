@@ -18,12 +18,16 @@ dnf install -y unzip wget git curl flatpak blueberry bluez bluez-libs bluez-tool
 papirus-icon-theme file-roller gtk-murrine-engine gtk2-engines ImageMagick xclip lxappearance xfce4-settings \
 parcellite neofetch maim gpick jq tint2 moreutils recode dunst plank redshift mate-polkit mpv yaru-sound-theme \
 alsa-utils xorg-x11-xinit brightnessctl acpi playerctl python3-pytz glava wmctrl jgmenu rsms-inter-fonts \
-NetworkManager network-manager-applet starship lsof gamemode zsh \
+NetworkManager network-manager-applet starship lsof gamemode zsh mpv picom \
 dbus-devel gcc git libconfig-devel libdrm-devel libev-devel libX11-devel libX11-xcb libXext-devel libxcb-devel mesa-libGL-devel \
-meson pcre-devel pixman-devel uthash-devel xcb-util-image-devel xcb-util-renderutil-devel xorg-x11-proto-devel
+meson pcre-devel pixman-devel uthash-devel xcb-util-image-devel xcb-util-renderutil-devel xorg-x11-proto-devel \
 
 # Installing Essential Programs 
-dnf install -y sddm bspwm sxhkd kitty rofi polybar thunar feh lxpolkit micro geany btop
+dnf install -y sddm bspwm sxhkd kitty rofi polybar thunar feh lxpolkit micro geany btop thunderbird 
+
+# Installing Nvidia drivers
+dnf install akmod-nvidia
+dnf install xorg-x11-drv-nvidia-cuda
 
 # Adding flathub repo
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -34,10 +38,7 @@ flatpak override --env=GTK_THEME=my-theme
 flatpak install -y flathub com.discordapp.Discord
 flatpak install -y flathub io.gitlab.librewolf-community
 flatpak install -y flathub com.github.Eloston.UngoogledChromium
-
-# Installing Custom ocs-url package
-dnf install ~/dotfiles-fedora/rpm-packages/ocs-url-3.1.0-1.fc20.x86_64.rpm
-dnf install ~/dotfiles-fedora/rpm-packages/ICAClient-rhel-22.7.0.20-0.x86_64.rpm
+flatpak install -y flathub com.valvesoftware.Steam
 
 ## Installing fonts
 dnf install fontawesome-fonts fontawesome-fonts-web
